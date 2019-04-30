@@ -1,13 +1,12 @@
 # Use an official Python runtime as a parent image
 FROM python:3.5-jessie
 
-MAINTAINER  Shirish Kadam <shirishkadam35@gmail.com>
 
 # Set the working directory to /app
-WORKDIR /adam_qas
+WORKDIR /Natural-Language-Chatbot
 
 # Copy the current directory contents into the container at /app
-COPY . /adam_qas
+COPY . /Natural-Language-Chatbot
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --default-timeout=3000 --trusted-host pypi.python.org -r requirements-docker.txt
