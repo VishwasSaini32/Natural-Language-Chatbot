@@ -32,7 +32,7 @@ RUN echo "export JAVA_HOME=/usr/lib/jvm/java-8-oracle" >> ~/.bashrc
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-# Install Elasticsearch
+# Install Elasticsearch from net
 ENV ELASTICSEARCH_VER 6.1.2
 
 RUN wget "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-${ELASTICSEARCH_VER}.deb"
